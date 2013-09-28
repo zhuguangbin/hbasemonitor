@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE quote [ <!ATTLIST sub_system id ID #IMPLIED> ]>
+<root>
+    <sub_system id="info" text="信息中心" iconCls="">
+        <!--module可以多层嵌套-->
+        <module id="module_overview" text="Overview" iconCls="icon-ok" url="/overview" />
+        <module id="module_cluster0" text="0号集群" iconCls="icon-ok" url="">
+            <module id="cluster0_master" text="Master" iconCls="icon-help" url="/cluster0_master"/>
+            <module id="cluster0_rs" text="RegionServer" iconCls="icon-reload" url="/cluster0_rs"/>
+            <module id="cluster0_zk" text="ZooKeeper" iconCls="icon-search" url=""/>
+        </module>
+        <module id="module_cluster1" text="1号集群" iconCls="icon-ok" url="">
+            <module id="cluster1_master" text="Master" iconCls="icon-help" url="/cluster1_master"/>
+            <module id="cluster1_rs" text="RegionServer" iconCls="icon-reload" url="/cluster1_rs"/>
+            <module id="cluster1_zk" text="ZooKeeper" iconCls="icon-search" url=""/>
+        </module>
+        <module id="module_cluster2" text="2号集群" iconCls="icon-ok" url="">
+            <module id="cluster2_master" text="Master" iconCls="icon-help" url="/cluster2_master"/>
+            <module id="cluster2_rs" text="RegionServer" iconCls="icon-reload" url="/cluster2_rs"/>
+            <module id="cluster2_zk" text="ZooKeeper" iconCls="icon-search" url=""/>
+        </module>
+    </sub_system>
+    <sub_system id="config" text="配置管理" iconCls="icon-reload">
+        <module id="module_cluster_management" text="集群管理" iconCls="icon-reload" url="/cluster"/>
+    </sub_system>
+</root>
