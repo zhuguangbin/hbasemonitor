@@ -7,5 +7,5 @@ class ClusterForm(DocumentForm):
     class Meta:
         document = Cluster
         embedded_field_name = 'cluster'
-        fields = ['clusterId', 'masterJMXUrl','description', ]
+        fields = ['masterJMXUrl','description',]
 
